@@ -1,0 +1,12 @@
+<!-- <button class="btn btn-outline-primary" (click)="exportAsPDF('line-chart-container');">Save As PDF</button> -->
+<div class="chart-wrapper" id="line-chart-container">
+    <canvas baseChart 
+        [datasets]="lineChartData" 
+        [labels]="lineChartLabels" 
+        [options]="lineChartOptions"
+        [colors]="lineChartColors" 
+        [legend]="lineChartLegend" 
+        [chartType]="lineChartType" 
+        [plugins]="lineChartPlugins">
+    </canvas>
+</div>

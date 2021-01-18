@@ -1,0 +1,11 @@
+<!--<button class="btn btn-outline-primary" (click)="exportAsPDF('pie-chart-container');">Save As PDF</button> -->
+<div class="chart-wrapper" id="pie-chart-container">
+    <canvas baseChart 
+    [data]="pieChartData" 
+    [labels]="pieChartLabels" 
+    [chartType]="pieChartType"
+    [options]="pieChartOptions"
+    [plugins]="pieChartPlugins"
+    [legend]="pieChartLegend">
+  </canvas>
+</div>

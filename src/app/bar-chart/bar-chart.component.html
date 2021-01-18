@@ -1,0 +1,15 @@
+
+<!--<button class="btn btn-outline-primary" (click)="exportAsPDF('chart-container');">Save As PDF</button>
+  <button class="btn btn-outline-primary offset-sm-1" (click)="exportAsDOC('chart-container');">Save As DOC</button> --> 
+<div class="chart-wrapper" id="chart-container">
+    <canvas baseChart 
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [plugins]="barChartPlugins"
+    [legend]="barChartLegend"
+    [chartType]="barChartType">
+  </canvas>
+</div>
+
+
